@@ -1,6 +1,4 @@
-import { Component, Inject } from '@angular/core';
-import { Router } from '@angular/router';
-import { NavigationEnd } from '@angular/router';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -10,13 +8,5 @@ import { NavigationEnd } from '@angular/router';
 })
 
 export class AppComponent {
-  currentComponent: string = 'about-me';
-  constructor(@Inject(Router) private router: Router) {
-    this.router.events.subscribe(val => {
-        if(val instanceof NavigationEnd) {
-            this.currentComponent = val.url.slice(1);
-        }
-    });
-  }
 
 }
