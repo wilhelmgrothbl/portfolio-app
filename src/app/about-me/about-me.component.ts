@@ -1,12 +1,6 @@
-
 import { Component, OnInit } from '@angular/core';
 import { faInstagram, faLinkedin, faGithub, faChrome,  } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-
-
-
-
-
 
 @Component({
   selector: 'app-about-me',
@@ -14,10 +8,23 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
-  
+
+  showModal = false;
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
   faPhone = faPhone;
   faIcons = [faGithub, faLinkedin, faInstagram, faChrome];
-  constructor() { }
+  
+  constructor() { 
+  
+  }
 
   ngOnInit(): void {}
 }
