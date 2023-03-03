@@ -21,10 +21,16 @@ export class AboutMeComponent implements OnInit {
 
   faPhone = faPhone;
   faIcons = [faGithub, faLinkedin, faInstagram, faChrome];
-  
-  constructor() { 
+
+
+
+   
+  constructor() {
   
   }
 
-  ngOnInit(): void {}
-}
+  ngOnInit(): void {
+
+    
+  }
+} 

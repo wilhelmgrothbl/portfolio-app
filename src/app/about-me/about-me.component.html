@@ -27,12 +27,18 @@
       </a>
   </div>
   
-  <div class="modal-info rounded-full align-middle">
+  <div class="modal-info rounded-full align-middle mt-5">
     <div class="font-sans text-2xl text-center">
-        <button (click)="openModal()">this is me</button>
+
+        <a class="btn rounded-lg" href="#link" (click)="openModal()">
+            <i>W</i><i>h</i><i>o</i><i></i><i></i>
+            <i>a</i><i>m</i><i></i>
+            <i></i><i>i</i>?<i></i><i></i><i></i><i></i>
+          </a>
         
+  
         <app-modal *ngIf="showModal" (close)="closeModal()"></app-modal>
-        <p class="text-sm text-orange-300">click me plz ↑</p>
+      
       </div>
   </div>
  

@@ -9,7 +9,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ModalComponent {
   @Output() close = new EventEmitter<void>();
 
-  items: string[] = ['a father', 'liverpool fc ❤️', 'a swedish bridge champion', 'trying to be good at chess'];
+  items: string[] = ['a father', 'liverpool fc', 'a swedish bridge champion', 'trying to be good at chess'];
   currentIndex = 0;
 
   closeModal() {
