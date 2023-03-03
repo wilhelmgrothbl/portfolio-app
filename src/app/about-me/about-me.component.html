@@ -5,6 +5,12 @@
     <div class="text-center text-2xl text-black">
         Front-end developer
       
+        <ul class="list-none">
+            <li class="text-lg mt-3" [class.animate__fadeIn]="currentIndex === i" [class.hidden]="currentIndex !== i" *ngFor="let item of items; let i = index;">
+              {{item}}
+            </li>
+          </ul>
+
     </div>
     <div>
         
@@ -39,6 +45,8 @@
   
         <app-modal *ngIf="showModal" (close)="closeModal()"></app-modal>
       
+       
+
       </div>
   </div>
  

@@ -9,6 +9,11 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 })
 export class AboutMeComponent implements OnInit {
 
+
+  items: string[] = ['a father', 'liverpool fc', 'a swedish bridge champion', 'trying to be good at chess'];
+  currentIndex = 0;
+
+
   showModal = false;
 
   openModal() {
@@ -30,7 +35,9 @@ export class AboutMeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    setInterval(() => {
+      this.currentIndex = (this.currentIndex === this.items.length - 1) ? 0 : this.currentIndex + 1;
+    }, 2400);
     
   }
 } 
